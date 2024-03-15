@@ -1,0 +1,72 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* App.css hoặc index.css */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Tạo một thanh cuộn tùy chỉnh cho toàn bộ website */
+html {
+  overflow-y: scroll; /* Luôn hiển thị thanh cuộn dọc */
+}
+
+/* Tùy chỉnh scrollbar cho toàn bộ trang */
+::-webkit-scrollbar {
+  width: 8px; /* Giảm độ rộng của thanh cuộn */
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Màu nền của track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Màu của thumb */
+  border-radius: 4px; /* Làm tròn góc của thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Màu của thumb khi hover */
+}

@@ -1,0 +1,112 @@
+/* DangNhap.css */
+.dang-nhap-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.dang-nhap-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.dang-nhap-container input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.dang-nhap-container button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.dang-nhap-container button:hover {
+    background-color: #0056b3;
+}
+
+.quen-mk-btn {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.quen-mk-btn:hover {
+    text-decoration: underline;
+}
+
+.modal-quen-mk {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    max-width: 500px;
+    margin: 10% auto;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-close-btn:hover {
+    color: #d33;
+}
+
+/* Style cho tiêu đề modal */
+.modal-quen-mk h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style cho input trong modal */
+.modal-quen-mk input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style cho button trong modal */
+.modal-quen-mk .reset-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.modal-quen-mk button:hover {
+    background-color: #218838;
+}

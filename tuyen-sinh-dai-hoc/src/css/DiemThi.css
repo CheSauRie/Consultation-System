@@ -1,0 +1,138 @@
+/* DiemThi.css */
+.diem-thi-wrapper {
+    padding: 32px;
+    max-width: 800px; /* Giới hạn kích thước tối đa của container */
+    margin: 20px auto;
+    /* background-color: #f8f9fa; Màu nền nhẹ */
+    border-radius: 8px; /* Bo tròn góc */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Thêm bóng */
+}
+
+.diem-thi-wrapper h1 {
+    color: #007bff; /* Màu sắc cho tiêu đề */
+    margin-bottom: 24px;
+}
+
+.diem-thi-search-btn:hover {
+    background-color: #218838;
+}
+
+.diem-thi-province-btns {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.diem-thi-province-btn {
+    margin: 8px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.diem-thi-province-btn:hover {
+    background-color: #0056b3;
+}
+
+.diem-thi-dropdown-provinces {
+    display: none; /* Ẩn mặc định */
+    background-color: #f1f1f1;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Bo tròn góc */
+    margin-top: 8px; /* Khoảng cách từ các nút */
+}
+
+.diem-thi-university-list {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.diem-thi-university-item {
+    width: 100%; /* Độ rộng tối đa */
+    margin: 8px 0;
+    padding: 8px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px; /* Bo tròn góc */
+    cursor: pointer;
+    transition: transform 0.2s ease; /* Hiệu ứng khi hover */
+}
+
+.diem-thi-university-item:hover {
+    transform: translateY(-2px); /* Di chuyển lên một chút khi hover */
+}
+
+.diem-thi-university-code {
+    margin-right: 10px; /* Khoảng cách giữa mã trường và tên trường */
+    font-weight: bold; /* Làm đậm mã trường */
+}
+
+.diem-thi-university-name {
+    flex-grow: 1;
+}
+
+.diem-thi-load-more {
+    margin-top: 10px;
+    width: 81px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px; /* Bo tròn nút */
+    transition: background-color 0.3s ease;
+}
+
+.diem-thi-load-more:hover {
+    background-color: #0056b3;
+}
+
+.diem-thi-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+    border-radius: 8px; /* Bo tròn góc */
+}
+
+/* Thêm container bọc ngoài cho search box và nút tìm kiếm */
+.diem-thi-search-container {
+    position: relative; /*Thiết lập vị trí tương đối để các elements bên trong có thể sử dụng absolute positioning */
+    max-width: 500px; /* Đặt chiều rộng tối đa */
+    margin: auto; /* Căn giữa container */
+    margin-bottom: 16px; /* Khoảng cách dưới cùng */
+}
+
+.diem-thi-search-box {
+    width: calc(100% - 60px); /* Tính toán chiều rộng dựa trên chiều rộng của nút Tìm */
+    padding: 8px;
+    border: 2px solid #007bff; /* Đặt màu viền */
+    border-radius: 20px; /* Bo tròn góc */
+    outline: none; /* Bỏ đường viền khi focus */
+    position: relative; /* Đặt lại vị trí tương đối để đảm bảo z-index hoạt động */
+    z-index: 1; /* Đặt z-index cao hơn nút Tìm để không bị nút che mất */
+}
+
+.diem-thi-search-btn {
+    position: absolute; /* Đặt nút Tìm một cách tuyệt đối so với container cha */
+    right: -20px; /* Đặt nút sát cạnh phải */
+    top: 38%; /* Đưa nút lên vị trí giữa của container */
+    transform: translateY(-50%); /* Điều chỉnh nút để nó ở chính giữa theo chiều dọc */
+    padding: 8px 16px; /* Đặt padding cho nút */
+    background-color: #28a745; /* Màu nền cho nút */
+    color: white;
+    border: none;
+    border-radius: 20px; /* Bo tròn góc của nút */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 2; /* Đặt z-index để nút ở trên cùng */
+}
+
+.diem-thi-search-btn:hover {
+    background-color: #218838;
+}

@@ -1,0 +1,172 @@
+.admin-manage-uni-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: "Nunito", sans-serif;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    border: 1px solid #e1e1e1;
+    text-align: left;
+    padding: 12px 15px;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.manage-uni-button {
+    background-color: #007bff; /* Blue */
+    color: white;
+    padding: 8px 16px;
+    margin: 4px 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.manage-uni-button:hover {
+    background-color: #0056b3;
+}
+.delete-button {
+    background-color: #f44336; /* Red */
+}
+
+.add-major-modal {
+    display: flex; /* Cho phép sử dụng flexbox */
+    justify-content: center; /* Căn giữa theo trục ngang */
+    align-items: center; /* Căn giữa theo trục dọc */
+    position: fixed; /* Vị trí fixed để luôn nằm trên mọi nội dung */
+    top: 0;
+    left: 0;
+    width: 100%; /* Chiều rộng đầy đủ */
+    height: 100%; /* Chiều cao đầy đủ */
+    background-color: rgba(0, 0, 0, 0.5); /* Màu nền semi-transparent */
+    z-index: 1000; /* Đảm bảo modal nằm trên các phần tử khác */
+    padding-top: 5vh; /* Thêm một chút không gian ở phía trên modal */
+    padding-bottom: 5vh; /* Thêm một chút không gian ở phía dưới modal */
+}
+
+.add-major-modal .modal-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: auto;
+    max-width: 600px;
+    margin: auto; /* Đây giúp căn giữa nội dung nếu không sử dụng flexbox */
+    transition: all 0.3s ease-in-out;
+    overflow-y: auto; /* Cho phép cuộn nội dung theo chiều dọc nếu cần */
+    max-height: 90vh; /* Giới hạn chiều cao tối đa của nội dung modal */
+}
+
+.add-major-modal .close-modal {
+    float: right;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    color: #6c757d;
+}
+
+.add-major-modal h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.add-major-modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-major-modal input,
+.add-major-modal select,
+.add-major-modal textarea {
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+}
+
+.add-major-modal button[type="submit"] {
+    margin-top: 15px;
+}
+/* Ẩn scrollbar trên WebKit browsers */
+.add-major-modal .modal-content::-webkit-scrollbar {
+    display: none; /* ẩn scrollbar trên WebKit browsers */
+}
+
+.md-editor {
+    margin-bottom: 20px;
+}
+.manage-uni-button {
+    background: none;
+    border: none;
+    color: #4caf50; /* Màu sắc của icon */
+    cursor: pointer;
+    padding: 8px;
+    transition: color 0.3s ease;
+}
+
+.manage-uni-button:hover {
+    color: #388e3c;
+}
+
+.manage-uni-button .fa-icon {
+    font-size: 1.2em; /* Hoặc bất kỳ kích thước nào bạn muốn */
+}
+
+@media screen and (max-width: 600px) {
+    .admin-manage-uni-container {
+        padding: 10px;
+    }
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    th,
+    td {
+        text-align: right;
+    }
+
+    td {
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        white-space: nowrap;
+    }
+}
