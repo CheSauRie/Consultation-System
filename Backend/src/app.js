@@ -22,7 +22,9 @@ app.use(bodyParser.json())
 app.use(cors())
 connectDB()
 app.use("/api/v1", rootRouter);
-
+app.get('/api/health', (req, res) => {
+    res.status(200).send('OK');
+});
 io.on('connection', (socket) => {
     console.log('A user connected', socket.id);
 

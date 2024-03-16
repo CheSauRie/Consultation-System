@@ -2,8 +2,8 @@ const express = require('express')
 
 const routerAdmin = express.Router()
 
-routerAdmin.get("/", (req, res) => {
-    res.send("hello admin")
+routerAdmin.get("/health", (req, res) => {
+    res.status(200).send("hello admin")
 })
 
 module.exports.routerAdmin = routerAdmin
